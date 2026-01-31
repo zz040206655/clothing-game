@@ -168,7 +168,7 @@ interface WardrobeViewProps {
 
 const WardrobeView = ({ wardrobe, onEquip, onRemove }: WardrobeViewProps) => {
     const [currentTab, setCurrentTab] = useState('top');
-    const categories = ['hair', 'top', 'bottom', 'shoes'];
+    const categories = ['hair', 'tops', 'bottoms', 'shoes'];
     const itemsForTab = wardrobe.filter(item => item.type === currentTab);
     return (
         <div className="wardrobe-view">
